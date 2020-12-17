@@ -130,7 +130,7 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
 
-//*Convert a string to spinal case. 
+//*Convert a string to spinal case.
 //*Spinal case is all-lowercase-words-joined-by-dashes.
 
 function spinalCase(str) {
@@ -140,4 +140,19 @@ function spinalCase(str) {
     .toLowerCase();
 }
 
-spinalCase('This Is Spinal Tap');
+spinalCase("This Is Spinal Tap");
+
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+//*Translate the provided string to Pig Latin.
+//*Input strings are guaranteed to be English words in all lowercase.
+
+function translatePigLatin(str) {
+  return str
+    .replace(/^[aeiou]\w*/, "$&way")
+    .replace(/(^[^aeiou]+)(\w*)/, "$2$1ay");
+}
+
+translatePigLatin("consonant");
