@@ -319,3 +319,9 @@ function selectionSort(array) {
   }
   return array;
 }
+
+///////////////////////////////////
+
+////////////////////////////////////////
+
+//* find the smallest positive integer
